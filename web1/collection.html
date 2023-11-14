@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection</title>
+  </head>
+  <body>
+    <a href="index.html"><h3>Return to Homepage</h3></a>
+    <h1><center>Collection</center></h1>
+    
+    <div>
+      <img src="images/p1.png" size="0.5">
+      <h3>Atlantis Blue</h3>
+      <p>Price: Rs.17,999</p>
+      <div><button id="addToCartButton" onclick="addToCart()">Add to Cart</button>
+      <span id="cartCount">0</span> item(s) in cart.
+      </div>
+      
+
+      <img src="images/p2.png" size="0.5">
+      <h3>Matrix Purple</h3>
+      <p>Price: Rs.17,999</p>
+      <div><button id="addToCartButton" onclick="addToCart()">Add to Cart</button>
+        <span id="cartCount">0</span> item(s) in cart.
+        </div>
+
+
+      <img src="images/p3.png" size="0.5">
+      <h3>Phoenix Red</h3>
+      <p>Price: Rs.17,999</p>
+      <div><button id="addToCartButton" onclick="addToCart()">Add to Cart</button>
+        <span id="cartCount">0</span> item(s) in cart.
+        </div>
+    </div>
+    <script> 
+      let cartCount = 0;
+      function addToCart(){
+        cartCount++;
+        updateCartCounter();
+      }
+      function updateCartCounter(){
+        document.getElementById("acrtCount").textContent = cartCount;
+      }
+    </script>
+    
+  </body>
+</html>
